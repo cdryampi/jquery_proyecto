@@ -1,0 +1,18 @@
+{
+    "name": "proyecto",
+    "version": "1.0.0",
+    "description": "web de prueba",
+    "main": "index.js",
+    "dependencies": {
+        "express": "^4.17.1",
+        "node.js": "0.0.0",
+        "nodemon": "^1.19.1",
+        "package.json": "^2.0.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "dev": "nodemon index.js"
+    },
+    "author": "yampi",
+    "license": "ISC"
+}
