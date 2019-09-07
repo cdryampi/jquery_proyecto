@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proyecto</title>
     <!-- Dependencias de NPM del proyecto y la vitaminzación de la web -->
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="public/node_modules/jquery-ui-1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="public/node_modules/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
     <link rel="stylesheet" href="public/node_modules/jquery-ui-1.12.1/jquery-ui.structure.min.css" />
@@ -16,24 +16,55 @@
 </head>
 
 <body>
+    <!-- Inicio del navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="../public/images/logo-caracol.png" alt="Bienvenido a web caracol" id="caracol-lgo" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="navbar-collapse collapse" id="navbar10">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">
+                                Calculadora
+                            </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Reloj</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Juego chapuza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <form class="my-auto d-inline w-25">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-right-0" placeholder="¿Qué quieres buscar?">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-dark border-left-0" type="button">IR</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Fin del navbar -->
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
     <section id="global">
         <!--Cabecera-->
-        <header>
-            <div id="logo">
-                PROYECTO JS
-            </div>
-
-            <navbar>
-                <ul id="menu">
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">RELOJ</a></li>
-                    <li><a href="#">SOBRE MI</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-
-                </ul>
-            </navbar>
-        </header>
-        <!-- Slider-->
+        >
         <div id="slider">
 
         </div>
@@ -43,9 +74,11 @@
                 <article class="post">
                     <h2>Título del articulo</h2>
                     <span>Fecha de publicación</span>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                        Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+                        1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+                        "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"
+                        by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
                 </article>
             </div>
             <!--Sidebar-->
@@ -63,7 +96,8 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <script src="public/node_modules/jquery/dist/jquery.slim.min.js"></script>
 
     <script src="public/node_modules/jquery/dist/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- JS del proyecto -->
     <script src="public/js/core.js"></script>
 
