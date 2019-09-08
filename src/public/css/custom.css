@@ -9,6 +9,21 @@ img#caracol-lgo {
 }
 
 
+/* img body */
+
+.inicio {
+    padding: 25px;
+    margin: 15px 150px 15px 150px;
+    background-color: white;
+}
+
+body {
+    background-image: url("../images/hojas.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
 /* Comentario */
 
 buttom#bottom-comentario {
@@ -130,8 +145,35 @@ div#panel {
     display: inline-grid;
     z-index: 2;
     margin-top: 15%;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: #555;
 }
 
 div#panel button {
     margin: 5px;
+}
+
+
+/* Lineas */
+
+.lines {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url("../images/lines.png") repeat-x;
+}
+
+
+/* Jquery */
+
+.wrapper {
+    max-width: 200px;
+    width: 100%;
+}
+
+.carousel-inner>.item {
+    height: 400px;
 }

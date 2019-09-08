@@ -4,6 +4,7 @@
     "description": "web de prueba",
     "main": "index.js",
     "dependencies": {
+        "bxslider": "^4.2.14",
         "express": "^4.17.1",
         "node.js": "0.0.0",
         "nodemon": "^1.19.1",
