@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Proyecto</title>
+    <title>Practicando JS</title>
     <!-- Dependencias de NPM del proyecto y la vitaminzación de la web -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="public/node_modules/jquery-ui-1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="public/node_modules/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
     <link rel="stylesheet" href="public/node_modules/jquery-ui-1.12.1/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- CSS personal -->
     <link rel="stylesheet" href="public/css/custom.css">
 </head>
@@ -43,18 +44,26 @@
                         <a class="nav-link text-uppercase" href="#">Contacto</a>
                     </li>
                 </ul>
-                <form class="my-auto d-inline w-25">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-right-0" placeholder="¿Qué quieres buscar?">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-dark border-left-0" type="button">IR</button>
-                        </div>
+                <div class="form-group">
+                    <div class="icon-addon addon-lg">
+                        <input type="text" placeholder="buscar..." class="form-control" id="search">
+                        <label for="search" class="fa fa-search" rel="tooltip"></label>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </nav>
     <!-- Fin del navbar -->
+    <div id="panel">
+        <!-- Default button -->
+        <button type="button" class="btn btn-info">Info</button>
+
+        <!-- Secondary button -->
+        <button type="button" class="btn btn-secondary">Secondary</button>
+
+        <!-- Indicates a successful or positive action -->
+        <button type="button" class="btn btn-success">Success</button>
+    </div>
     <!-- Carousel -->
     <div class="container mt-5">
         <div class="row">
@@ -82,41 +91,53 @@
         </div>
     </div>
     <!-- Fin del carousel -->
-
+    <!-- Inicio del contenido -->
     <div class="container">
         <div class="row">
+            <div class="col-8 mt-5">
 
+                <div class="row no-gutters mb-5">
+                    <div class="col-12 col-sm-6 col-md-8">
+                        <h1>Lorem Ipsum</h1>
+                        <div class="w-100"></div>
+                        <span class="">Fecha de publicación</span></div>
+                    <div class="col-6 col-md-4 d-flex flex-row-reverse">
+                        <buttom class="btn btn-success" type="buttom" id="bottom-comentario">Comentarios</buttom>
+                    </div>
+                </div>
+
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up
+                    one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
+                    "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+                    amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
+                    in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                </p>
+            </div>
+            <div class="col-4 mt-5">
+                <div>
+                    <h3 class="text-center">¿Quien soy?</h3>
+                    <img src="public/images/caracol.jpg" class="img-fluid" id="caracol" />
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied
+                        by English versions from the 1914 translation by H. Rackham.</p>
+                </div>
+
+            </div>
         </div>
     </div>
-    <section id="global">
-        <!--Cabecera-->
 
-        <div id="slider">
 
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-light">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="http://www.yampi.cat"> yampi.cat</a>
         </div>
-        <!--Contenido-->
-        <section id="content">
-            <div id="posts">
-                <article class="post">
-                    <h2>Título del articulo</h2>
-                    <span>Fecha de publicación</span>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                        Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-                        1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-                        "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"
-                        by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                </article>
-            </div>
-            <!--Sidebar-->
-            <sidebar id="slibar">
+        <!-- Copyright -->
 
-            </sidebar>
-        </section>
-    </section>
-
-    <footer>
-        Master de JavaScript de Undemy &copy;
     </footer>
+    <!-- Footer -->
 
     <!-- Vitaminación de dependencias de estilos de bootstrap y jquery-ui -->
     <script src="public/node_modules/jquery/dist/jquery.slim.min.js"></script>
