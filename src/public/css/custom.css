@@ -33,12 +33,6 @@ buttom#bottom-comentario {
     display: inline-block;
 }
 
-@media (max-width: 768px) {
-    buttom#bottom-comentario {
-        display: inline-table;
-    }
-}
-
 img#caracol {
     height: 15pc;
 }
@@ -176,4 +170,23 @@ div#panel button {
 
 .carousel-inner>.item {
     height: 400px;
+}
+
+
+/* Queries */
+
+@media (max-width: 960px) {
+    buttom#bottom-comentario {
+        display: inline-table;
+    }
+    buttom#bottom-comentario {
+        margin-bottom: 5pc;
+    }
+    .img-fluid {
+        height: 20pc;
+    }
+    .inicio {
+        padding: 0px;
+        margin: 10px 75px 15px 75px;
+    }
 }
