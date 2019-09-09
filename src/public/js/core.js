@@ -1,6 +1,7 @@
 $(document).ready(function() {
     console.log("Ready!")
 
+
     //Post
     var posts = [{
             title: 'Prueba titulo 1',
@@ -43,7 +44,7 @@ $(document).ready(function() {
                                 <div class="w-100"></div><button class="btn btn-success" type="button">Leer más</button>
                             </p>
                         </div>
-        `
+                     `
             $('#content').append(post)
 
         })
@@ -51,18 +52,59 @@ $(document).ready(function() {
     var theme = $("#theme")
     $("#blue").click(function(e) {
         theme.attr("href", "public/css/blue.css").attr("integrity", "")
-        $(".row .btn").removeClass('btn-danger').removeClass('btn-success').addClass('btn-info');
+        $(".row .btn").removeClass('btn-danger').removeClass('btn-success').addClass('btn-info')
         console.log("Cambio de tema! a azul....")
     });
     $("#red").click(function(e) {
         theme.attr("href", "public/css/red.css")
-        $(".row .btn").removeClass('btn-success').removeClass('btn-info').addClass('btn-danger');
+        $(".row .btn").removeClass('btn-success').removeClass('btn-info').addClass('btn-danger')
+        console.log("Cambio de tema! a rojo....")
     });
     $("#green").click(function(e) {
         theme.attr("href", "public/css/green.css")
-        $(".row .btn").removeClass('btn-danger').removeClass('btn-info').addClass('btn-success');
+        $(".row .btn").removeClass('btn-danger').removeClass('btn-info').addClass('btn-success')
+        console.log("Cambio de tema! a verde....")
 
     });
+    // Scroll arriba de la web
+    $('#subir').click(function(e) {
+            e.preventDefault()
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500)
+            return false
+        })
+        // LocalStorange
+    $("#formulario").submit(function() {
+        var form_name = $("#send-user").val()
+        console.log(form_name)
+        localStorage.setItem("send-user", form_name)
+        location.reload()
+    })
+    var form_name = localStorage.getItem("send-user")
+    console.log(form_name)
+    if (form_name != null && form_name != "undefined") {
+        $("#navegacion").append(`
+        <li class='nav-item dropdown'><a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+            ${form_name}
+            </a>
+            <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+              <a class='dropdown-item' href='#' id='logout'>Cerrar sessión</a>
+            </div>
+          </li>`)
+        $("#formulario").hide()
+        $(".hide").hide()
+
+        $("#logout").click(function() {
+            localStorage.clear()
+            location.reload()
+        });
+
+
+    }
+
+
+
 
 
 
