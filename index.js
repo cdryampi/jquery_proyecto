@@ -9,6 +9,6 @@ app.set('port', process.env.PORT || 3000);
 app.use(express.static(path.join(__dirname, 'src')))
 
 // listen the server
-const server = app.listen(app.get('port'), () => {
+const server = app.listen(3000, '0.0.0.0', () => {
     console.log('Listening on port', app.get('port'))
 })

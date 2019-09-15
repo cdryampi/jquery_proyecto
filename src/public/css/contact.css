@@ -1,0 +1,5 @@
+/* CSS para modificar la injección de Jq- Form Validator */
+
+span.help-block.form-error {
+    color: red;
+}

@@ -94,7 +94,7 @@ $(document).ready(function() {
         location.reload()
     })
     var form_name = localStorage.getItem("send-user")
-    console.log(form_name)
+
     if (form_name != null && form_name != "undefined") {
         $("#navegacion").append(`
         <li class='nav-item dropdown'><a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
